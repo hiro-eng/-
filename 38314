@@ -1,0 +1,13 @@
+<html>
+<head>
+<script> 
+ 
+function tasimaki() {hitotu=document.form1.hitotu.value; hutatu=document.form1.hutatu.value; a=isFinite(hitotu); b=isFinite(hutatu); if(a==false||b==false) alert("数字を入れてよ！"); else if(hitotu>999999999||hutatu>999999999) alert("数字が大きすぎるよ！"); else if(hitotu<0||hutatu<0) alert("数字が小さすぎるよ！"); else document.form1.kotae.value=eval(hitotu)+eval(hutatu); } //--> </script> 
+
+</head> 
+<body> 
+<h2>足し算</h2>
+
+<table cellpadding="0" border="0" cellspacing="0"><form name="form1"> <tr> <td colspan="2"></td> <td><input type="text" size="9" name="hitotu"></td> </tr> <tr> <td valign="bottom">＋</td> <td valign="bottom">）</td> 　 <td><input type="text" size="9" name="hutatu" onChange="tasimaki();"></td> </tr> <tr> <td></td> <td colspan="2">￣￣￣￣￣￣￣￣￣</td> </tr> <tr> <td colspan="2"></td> <td><input type="text" size="12" name="kotae"></td> </tr> <tr> <td colspan="3"> <input type="button" value="こたえは？" onClick="tasimaki();"> <input type="reset" value="リセット！"> </td> </tr> </form> </table>  
+</body> </html>
+
